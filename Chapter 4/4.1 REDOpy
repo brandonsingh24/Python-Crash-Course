@@ -1,0 +1,8 @@
+### Just doing some practice
+
+pizza=['pepperoni', 'cheese', 'veggie']
+
+for topping in pizza:
+
+    print(f"My favourite pizza topping is {pizza}!")
+print("Pizza is my favourite food!")
