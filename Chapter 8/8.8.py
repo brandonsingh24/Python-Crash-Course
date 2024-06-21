@@ -8,18 +8,11 @@ def make_album(artist_name, album_name, track_number=None):
     return album
 
 while True:
-    print("\n please tell me the artist name:")
-    print("\n please tell me the album name:")
-    print("(enter 'q' at any time to quit)")
-
-    artist_name = input("artist")
+    artist_name = input("\n please tell me the artist name or press q to quit:")
+    
     if artist_name == 'q':
         break
-
+    
+    album_name = input("\nPlease tell me the album name:")
     album_info = make_album(artist_name, album_name)
-    print(f\"nThis is your album info: {album_info}")                        
-#album = {'artist' : artist_name, 'album' : album_name}
-#return album
-album_info = make_album('the beatles', 'abbey road', '11')
-#album_info = make_album('artist', 'album')
-print(f"The follow is album info: {album_info}")
+    print(f"\nThis is your album info: {album_info}")                        
