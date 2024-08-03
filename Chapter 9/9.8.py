@@ -14,3 +14,4 @@ Userprivileges = Privileges(['can add post', 'can delete post', 'can ban user'])
 
 
 Userprivileges.show_privileges()
+
