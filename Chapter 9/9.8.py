@@ -32,15 +32,7 @@ class Privileges:
         for privilege in self.privileges:
             print(f"- {privilege}")
 
-class Admin(User):
-    def __init__(self, first_name, last_name, age, privileges):
-        super().__init__(first_name, last_name, age)
-        self.privileges = Privileges(privileges)
+Userprivileges = Privileges(['can add post', 'can delete post', 'can ban user'])
 
-    def show_privileges(self):
-       self.privileges.show_privileges()
 
-admin1 = Admin("Luke", "Skywalker", 53, ['can add post', 'can delete post', 'can ban user'])
-admin1.show_privileges()
-
-print(user1, admin1)
+Userprivileges.show_privileges()
