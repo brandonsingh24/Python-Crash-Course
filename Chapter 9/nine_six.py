@@ -13,7 +13,7 @@ class Restaurant:
 
 my_restaurant = Restaurant("Py's Bakery", "Pies")
 
-#print(f"My restaurant's name is {my_restaurant.name} that serves {my_restaurant.diet}")
+print(f"My restaurant's name is {my_restaurant.name} that serves {my_restaurant.diet}")
 my_restaurant.describe_restaurant()
 
 class IceCreamStand(Restaurant):
@@ -23,8 +23,5 @@ class IceCreamStand(Restaurant):
 
     def list(self):
         return f"{self.flavours} are what we have to serve today!"
-
-flavours= IceCreamStand(["chocolate","vanilla", "mint"])
-
-
-print(flavours.list())
+#flavours= IceCreamStand(["chocolate","vanilla", "mint"])
+#print(flavours.list())
