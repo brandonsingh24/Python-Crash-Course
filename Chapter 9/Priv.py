@@ -1,3 +1,5 @@
+from User import User
+
 class Privileges:
     
     def __init__(self, privileges):
